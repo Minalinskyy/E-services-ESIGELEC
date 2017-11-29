@@ -1,0 +1,23 @@
+[INFO  - 2017-11-19T12:58:34.586Z] GhostDriver - Main - running on port 37887
+[INFO  - 2017-11-19T12:58:34.837Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36","webSecurityEnabled":true}
+[INFO  - 2017-11-19T12:58:34.837Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - page.customHeaders:  - {"Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","Accept-Language":"fr-FR;q=0.8","Connection":"keep-alive","User-Agent":"Mozilla/5.0 (Windows NT 6.2; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0"}
+[INFO  - 2017-11-19T12:58:34.837Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36","phantomjs.page.customHeaders.User-Agent":"Mozilla/5.0 (Windows NT 6.2; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0","phantomjs.page.customHeaders.Connection":"keep-alive","phantomjs.page.customHeaders.Accept-Language":"fr-FR;q=0.8","phantomjs.page.customHeaders.Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
+[INFO  - 2017-11-19T12:58:34.837Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5a2cad00-cd29-11e7-bf75-21b9ab9718ef
+[ERROR - 2017-11-19T12:58:35.206Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-19T12:58:35.206Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - page.onError - stack:
+  (anonymous function) (https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-19T12:58:35.216Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - page.onError - msg: ReferenceError: Can't find variable: $
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-19T12:58:35.216Z] Session [5a2cad00-cd29-11e7-bf75-21b9ab9718ef] - page.onError - stack:
+  resourceLoadedSuccessfully (https://cas.esigelec.fr/cas/js/cas.js;jsessionid=AFD4704E92E477D4AD2442B318F2082F:41)
+  f (https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js:6)
+  (anonymous function) (https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js:6)
+  (anonymous function) (https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js:6)
+  o (https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js:6)
+
+  phantomjs://platform/console++.js:263 in error

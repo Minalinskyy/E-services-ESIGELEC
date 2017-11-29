@@ -75,6 +75,6 @@ Only for the Raspberry PI version:
 
 3, Don't forget the change I've written for all 3 versions.
 
-OK, normally when you run the programme with command python e_services.py, everything should be okay.
+OK, normally when you run the programme with command python e_services.py(or python3 e_services.py), everything should be okay.
 
 Have a nice try.

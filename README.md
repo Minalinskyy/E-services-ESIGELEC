@@ -78,3 +78,15 @@ Only for the Raspberry PI version:
 OK, normally when you run the programme with command python e_services.py(or python3 e_services.py), everything should be okay.
 
 Have a nice try.
+
+PS: For the user who wants to auto-play this script on a Unix server, please download the server all in one version. Put everything in this folder into a public path, ex: /home/usr/edt. Then there are only two things you need to do: 1, change the email and password in edt_notes_abs.py. 2, use command "sudo chmod 777 /home/usr/edt" and command "crontab -e" and at the end of file: type and change like: 
+
+SHELL=/bin/bash    
+
+HOME=/home/usr/edt  
+
+0 */3 * * * python3 /home/usr/edt/edt_notes_abs.py >> /home/usr/edt/edt_notes_abs.log
+
+15 */3 * * * python3 /home/usr/edt/edt_notes_abs.py
+
+Then, CTRL+X and y to save change. These commandes will make the Unix server autorun the download, check and send email script every 3 hours like 0h00, 3h00 and autorun the delog script every 3 hours like 0h15, 3h15 etc to delete the too early log files.

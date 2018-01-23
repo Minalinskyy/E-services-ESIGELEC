@@ -11,19 +11,19 @@ from openpyxl import load_workbook
 
 def sendmail(type,body):
 
-  fromaddr = "jerry574638690@gmail.com"
-  toaddr = "jerry574638690@gmail.com"
+  fromaddr = "sender email"
+  toaddr = "receiver email"
   msg = "\r\n".join([
-    "From: jerry574638690@gmail.com",
-    "To: jerry574638690@gmail.com",
-    "Subject: ESIGELEC NOTE CHANGE",
+    "From: sender email",
+    "To: receiver email",
+    "Subject: ESIGELEC "+type+" CHANGE",
     "",
     body
     ])
   server = smtplib.SMTP('smtp.gmail.com:587')
   server.ehlo()
   server.starttls()
-  server.login(fromaddr, "574638690")
+  server.login(fromaddr, "yourpassword")
   server.sendmail(fromaddr, toaddr, msg)
   server.quit()
   print('send email ok -- '+ type)
@@ -164,7 +164,7 @@ def output():
         body = 'Get cours information bugged, check your code\n'
 
     if body != '':
-      sendmail('cours', body)
+      sendmail('COURS', body)
 
     print('result cours:'+ res[0])
 
@@ -182,7 +182,7 @@ def output():
         body = 'Get notes information bugged, check your code\n'
 
     if body != '':
-      sendmail('notes', body)
+      sendmail('NOTES', body)
 
     print('result notes:'+res[1])
 
@@ -196,7 +196,7 @@ def output():
         body = 'Get abs information bugged, check your code\n'
 
     if body != '':
-      sendmail('abs', body)
+      sendmail('ABS', body)
 
     print('result abs:'+res[2])
 

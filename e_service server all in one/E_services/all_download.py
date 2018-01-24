@@ -77,7 +77,9 @@ def connectEsv(writeFile=False, usr='', pwd='', nbWeeks=8):
             EC.presence_of_element_located((By.ID, "form:entree_6420842"))
         )
         driver.find_element_by_link_text('Scolarité').click()
-        time.sleep(3)
+        WebDriverWait(driver, 60).until(
+            EC.element_to_be_clickable((By.LINK_TEXT,"Mon planning"))
+        )        
         driver.find_element_by_link_text('Mon planning').click()
     except Exception as e:
         print('click timetable page error')
@@ -271,7 +273,9 @@ def connectEsv(writeFile=False, usr='', pwd='', nbWeeks=8):
             EC.presence_of_element_located((By.ID, "form:entree_6420842"))
         )
         driver.find_element_by_link_text('Mes Absences').click()
-        time.sleep(3)
+        WebDriverWait(driver, 60).until(
+            EC.element_to_be_clickable((By.LINK_TEXT,"Mes absences en 2017-2018"))
+        )
         driver.find_element_by_link_text('Mes absences en 2017-2018').click()
     except Exception as e:
         print('click abs page error')
@@ -370,5 +374,5 @@ def connectEsv(writeFile=False, usr='', pwd='', nbWeeks=8):
     return result
     
 if __name__ == '__main__':
-    connectEsv(writeFile = True,usr='w.zhang.12',pwd='ZWTzwt940331',nbWeeks=5)    
+    connectEsv(writeFile = True,usr='',pwd='',nbWeeks=5)    
     

@@ -22,7 +22,7 @@ def sendmail(type,body):
   server = smtplib.SMTP('smtp.gmail.com:587')
   server.ehlo()
   server.starttls()
-  server.login(fromaddr, "574638690")
+  server.login(fromaddr, "password")
   server.sendmail(fromaddr, toaddr, msg)
   server.quit()
   print('send email ok -- '+ type)
